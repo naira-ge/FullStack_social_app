@@ -1,0 +1,156 @@
+
+@import '../../styles/variables';
+
+.sidebar{
+    padding:0;
+}
+
+.sidebarWrapper{
+    padding:.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: .1rem;
+}
+
+.sidebarList{
+    padding:.7rem .5rem;
+    list-style: none;
+    border-radius: $radius;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: .3rem 0.4rem 0.3rem 0;
+
+    .sidebarListItem{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.8rem;
+        cursor: pointer;
+        color:rgba(30, 37, 107, 0.9);
+
+        input {
+            outline: none;
+            border:none;
+            font-weight: 500;
+            color:rgba(30, 37, 107, 0.9);
+            margin: 0 .5rem;
+
+            &::placeholder {
+                color:rgba(110, 111, 119, 0.9);
+                font-weight: 500;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .sidebarIcon{
+        font-size:1.5rem;
+        margin-right: .5rem;
+    }
+    .sidebarListItemText{
+        display: flex;
+        align-items: center;
+        font-size:1rem;
+        font-weight: 500;
+    }
+}
+
+.sidebarHr{
+    margin:.6rem 0;
+}
+
+.sidebarUserWrapper{
+    width:100%;
+    color:rgba(27, 27, 75, 1);
+    border-radius: $radius;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    .sidebarUserTitle{
+        text-align:center;
+        padding:.5rem 0;
+    }
+}
+
+.sidebarFriendWrapper{
+margin: .5rem .7rem;
+
+ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    }
+}
+
+
+
+.sidebarFriend{
+    display: flex;
+    align-items:center;
+    margin-bottom: .9rem;
+}
+
+.profileImgContainer{
+position: relative;
+margin-right: .5rem;
+
+.sidebarProfileImg{
+    max-width: 6vmin;
+    max-height: 6vmin;
+    border-radius:50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-right: .5rem;
+}
+.profileOnline{
+    width: .7rem;
+    height: .7rem;
+    border-radius:50%;
+    background-color:rgb(40, 143, 40);
+    position:absolute;
+    top: -2px;
+    right:5px;
+    border:1px solid white;
+}
+}
+.sidebarUserName{
+    font-weight: 500;
+}
+
+.editBtn{
+    margin:0 auto;
+    border:inherit;
+    padding: 0.3rem 0.6rem;
+    color: rgba(27, 27, 75, 1);
+    font-size: .8rem;
+    border-radius:.5rem;
+}
+
+.editBtn:hover,
+.editBtn:active{
+    border:inherit;
+    color:white;
+    background:rgba(27, 27, 75, 1);
+}
+
+.editBtn:disabled{
+    cursor:not-allowed;
+    opacity:0.7;
+}
+
+.error{
+    color:red;
+    font-size:.6rem;
+    letter-spacing:2px;
+    margin-left:.7rem;
+    font-weight:600;
+}
+
+.success{
+    color:green;
+    font-size:.6rem;
+    letter-spacing:2px;
+    margin-left:.7rem;
+    font-weight:600;
+}

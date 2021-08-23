@@ -1,0 +1,126 @@
+@import '../../styles/variables';
+
+.share{
+    width: 100%;
+    border-radius:$radius;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.shareWrapper{
+    padding:.5rem;
+}
+
+.shareTop{
+    display:flex;
+    align-items:flex-start;
+}
+
+.imageContainer {
+    width:7vmin;
+    padding-top:7vmin;
+    position:relative;
+    margin-right: .5rem;
+    border-radius:50%;
+
+    .shareProfileImg{
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        bottom:0;
+        border-radius:50%;
+        object-fit: cover;
+    }
+}
+
+.shareInput{
+    width: 90%;
+    display:flex;
+    flex-flow: column nowrap;
+    padding:0.2rem .5rem;
+
+    .postTitle {
+        padding:.5rem 0;
+        color:$clr-grey-5;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    input {
+    border:none;
+    border-bottom:0.5px solid lightgrey;
+    outline: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height:1.2rem;
+
+    &:focus{
+        outline: none;
+    }
+    }
+
+    textarea {
+        border: none;
+        overflow: auto;
+        outline: none;
+        resize: none;
+        font-weight: 500;
+        font-size: .9rem;
+        padding:.8rem .3rem;
+        color:$clr-grey-2;
+    }
+}
+
+.shareHr{
+    margin: .5rem 0.2rem;
+}
+
+.shareBottom{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.shareOptions{
+    display:flex;
+    margin-left: .5rem;
+
+    .shareOption{
+        display:flex;
+        align-items:center;
+        margin-right: 1.9rem;
+        cursor: pointer;
+    }
+
+    .shareIcon{
+        font-size: 1.1rem;
+        color:rgb(126, 125, 125);
+        margin-right: .6rem;
+
+        &:hover{
+            color:rgb(41, 40, 40);
+        }
+    }
+}
+
+.shareOptionText{
+    font-size: .8rem;
+    font-weight: 500;
+    color:rgb(41, 40, 40);
+}
+
+.shareButton{
+    border:none;
+    font-size:1.3rem;
+    color:rgb(126, 125, 125);
+    margin:0 1rem;
+    cursor: pointer;
+    background-color:inherit;
+    border:none;
+
+    &:hover{
+        color:rgb(41, 40, 40);
+    }
+}

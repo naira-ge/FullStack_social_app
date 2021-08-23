@@ -1,0 +1,25 @@
+.searchbar{
+        width: 85%;
+        height:30px;
+        background-color: white;
+        border-radius: .8rem;
+        display:flex;
+        align-items: center;
+
+        .searchIcon{
+            font-size: 1.2rem !important;
+            margin: 0 .6rem;
+            color:grey;
+        }
+        input{
+            border:none;
+            outline:none;
+            width: 70%;
+            font-size: 1rem;
+            font-weight:500;
+            color:grey;
+        }
+        input:focus{
+            outline:none;
+        }
+    }

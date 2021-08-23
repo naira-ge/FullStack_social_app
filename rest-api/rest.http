@@ -1,0 +1,110 @@
+### User sign up endpoint
+POST http://localhost:8800/api/users
+Content-Type: application/json
+
+{
+    "username": "Naira ",
+    "email":"naira@gmail.com",
+    "password":"123456"
+}
+
+### User sign in endpoint
+POST http://localhost:8800/api/users/login
+Content-Type: application/json
+
+{
+    "email":"naira@gmail.com",
+    "password":"123456"
+}
+
+### Token routers
+### Get a user profile endpoint
+GET  http://localhost:8800/api/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhQGdtYWlsLmNvbSIsImlhdCI6MTYyOTAzNzUzOSwiZXhwIjoxNjI5NjQyMzM5fQ.vZVlj3Ob-X6SG69Zv-Ybkd7eh5t1juxMDXDbQ46U6P8
+
+### Get refresh token endpoint
+GET http://localhost:8800/api/tokens
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhQGdtYWlsLmNvbSIsImlhdCI6MTYyOTAzMTQwNiwiZXhwIjoxNjMwMzI3NDA2fQ.v8Fx4a_Xsv7MR54QdPghpZPHTxUBrbIy1GAGGhqHjBI
+
+### Update user profile information endpoint
+PATCH   http://localhost:8800/api/users
+Content-Type: application/json 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhZ2V6aG95YW5AZ21haWwuY29tIiwiaWF0IjoxNjI5MTc5MzU5LCJleHAiOjE2Mjk3ODQxNTl9.u0e1jQ8Y3NXTI_dBaBdhwlss3d67IJnuoBrHqVnk1ZA
+
+{
+    "city": "Yerevan1", 
+    "phone": "37477113111"
+}
+
+#### Password reset pin request endpoint
+POST http://localhost:8800/api/users/reset-password
+Content-Type: application/json 
+
+{
+    "email":"naira@gmail.com"
+}
+
+#### Update new password endpoint
+PATCH  http://localhost:8800/api/users/reset-password
+Content-Type: application/json 
+
+{
+    "email":"naira@gmail.com",
+    "pin":"105481",
+    "newPassword":"password1"
+}
+
+#### User logout endpoint
+DELETE  http://localhost:8800/api/users/logout
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhZ2V6aG95YW5AZ21haWwuY29tIiwiaWF0IjoxNjI5MTE3NDI2LCJleHAiOjE2Mjk3MjIyMjZ9.cgyOTr_0mlfdThovc510xN2J-WhrX96dZzg1M7pfpj0
+
+
+###Posts endpoints
+### Create a new post
+POST http://localhost:8800/api/posts
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhZ2V6aG95YW5AZ21haWwuY29tIiwiaWF0IjoxNjI5MzIwNTYwLCJleHAiOjE2Mjk5MjUzNjB9.CGW4uQ_ozSj_zjsCRwS1RBO6oBZrBmGe_-KwjLi6JOA
+Content-Type: application/json
+
+{
+    "title":"My idea to create geolab",  
+    "desc":"Great, I like it idea for the let's discover market"
+}
+
+#### Like or dislike post
+PATCH http://localhost:8800/api/posts/like/611de010cc4302b3288204bd
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhZ2V6aG95YW5AZ21haWwuY29tIiwiaWF0IjoxNjI5MzU2NTc5LCJleHAiOjE2Mjk5NjEzNzl9.KfcSgx2VdKnz0iU64MGuhJpBciow82sdHjBhxs3WN2U
+Content-Type: application/json
+
+
+### Get all posts for specific user
+GET http://localhost:8800/api/posts
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhZ2V6aG95YW5AZ21haWwuY29tIiwiaWF0IjoxNjI5MTM3NjQyLCJleHAiOjE2Mjk3NDI0NDJ9.5ITahmYWqwqEaeeYX2tiVd-3b2_uoPKb3037ZuCNDQo
+
+
+### Get post for postId
+GET http://localhost:8800/api/posts/611d790e2c26d0be8cea78e9
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhZ2V6aG95YW5AZ21haWwuY29tIiwiaWF0IjoxNjI5MzMyNjMxLCJleHAiOjE2Mjk5Mzc0MzF9.bUu2YICJszq0HPRyZuirbcxNZ25wS9-mcFloDb5s8Cc
+
+### Update post reply message  from client
+PATCH http://localhost:8800/api/posts/611d790e2c26d0be8cea78e9
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhZ2V6aG95YW5AZ21haWwuY29tIiwiaWF0IjoxNjI5MzMyNjMxLCJleHAiOjE2Mjk5Mzc0MzF9.bUu2YICJszq0HPRyZuirbcxNZ25wS9-mcFloDb5s8Cc
+Content-Type: application/json
+
+{
+    "message": "Hey, glad you participate us!"
+}
+
+### Update post message information by postId
+PATCH http://localhost:8800/api/posts/update/611aa0b103510d6aac2d3953
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhZ2V6aG95YW5AZ21haWwuY29tIiwiaWF0IjoxNjI5MTc5MzU5LCJleHAiOjE2Mjk3ODQxNTl9.u0e1jQ8Y3NXTI_dBaBdhwlss3d67IJnuoBrHqVnk1ZA
+Content-Type: application/json
+
+{
+    "title":"Create new fintach join me guys!",  
+    "desc":"WOW great idea, start to discover market. I'm in"
+}
+
+### Delete post message by postId
+DELETE  http://localhost:8800/api/posts/delete/611aa0b103510d6aac2d3953
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5haXJhZ2V6aG95YW5AZ21haWwuY29tIiwiaWF0IjoxNjI5MTc5MzU5LCJleHAiOjE2Mjk3ODQxNTl9.u0e1jQ8Y3NXTI_dBaBdhwlss3d67IJnuoBrHqVnk1ZA
+

@@ -1,0 +1,200 @@
+@import '../../styles/variables';
+
+.rightbar{
+    width:97%;
+    border-radius: $radius;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: 1rem .4rem;
+}
+.rightbarWrapper{
+    padding: 0 .3rem;
+}
+
+.jobsContainer{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.follow{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content:space-between;
+    font-size: .9rem;
+    color:$clr-grey-7;
+    margin-right:.5rem;
+    font-weight: 500;
+    cursor:pointer;
+
+    &:hover {
+        color:$clr-grey-4;
+
+    }
+}
+
+.rightbarButton{
+    width:15vmin;
+    border:none;
+    padding:.5rem;
+    border-radius: $radius;
+    font-weight: 600;
+    color:rgba(26, 26, 80, 0.7);
+    margin-bottom:.8rem;
+}
+
+.jobImg{
+    max-width: 23vmin;
+    object-fit: cover;
+}
+
+.followersImg{
+    max-width: 27%;
+    object-fit: cover;
+    margin:.7rem 0;
+}
+
+.jobsText{
+    font-weight: 800;
+    line-height:1.2rem;
+    color:rgba(30, 30, 85, 0.897);
+    padding-bottom:1rem;
+}
+
+.followerText{
+    font-weight: 800;
+    line-height:1.1rem;
+    color:rgba(60, 60, 170, 0.897);
+    padding-bottom:.8rem;
+
+    .github{
+        font-size: 1.3rem;
+        letter-spacing:.5rem;
+    }
+}
+
+.jobsWrapper{
+    width:100%;
+
+    ul {
+        padding:0;
+        margin:0;
+        list-style: none;
+        }
+    }
+
+    .companyDetails{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items:center;
+        margin-bottom: .5rem;
+        color:rgba(27, 27, 75, 0.918);
+
+        a {
+            text-decoration: none;
+            color:$clr-grey-5;
+            font-weight: 600;
+
+            &:hover {
+                color:$clr-grey-3;
+            }
+        }
+
+    .companyLogoContainer {
+        width:12vmin;
+        position:relative;
+        padding-top:12vmin;
+        border-radius:50%;
+        margin:0 1rem;
+    }
+
+    .companyLogo{
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        bottom:0;
+        border-radius:50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit:scale-down;
+    }
+    .companyDesc{
+        padding:0 .5rem;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+
+        h4{
+            margin:0;
+        }
+        .position{
+            font-weight: 700;
+            color:rgba(60, 60, 126, 0.9)
+        }
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.rightbarTitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+
+}
+
+.rightbarTitle, 
+.rightbarTitle{
+    text-align: center;
+}
+
+.rightbarInfo{
+    margin-bottom: 1rem;
+    color:#555;
+
+    .rightbarInfoItem{
+        margin-bottom: .3rem;
+    }
+
+    .rightbarInfoKey{
+        font-weight: 400;
+        margin-right: .5rem;
+        
+    }
+
+    .rightbarInfoValue{
+        font-weight: 600;
+    }
+}
+
+.rightbarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+}
+.rightbarFollowing{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    padding:.9rem;
+    cursor: pointer;
+}
+
+.rightbarFollowingImg{
+    max-width: 8vmin;
+    max-height: 8vmin;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+.containerBtn {
+
+}

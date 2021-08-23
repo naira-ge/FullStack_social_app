@@ -1,0 +1,137 @@
+@import '../../../styles/variables';
+
+.post{
+    width:99%;
+    border-radius: $radius;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: 1rem 0;
+    position: relative;
+
+    ul{
+    list-style: none;
+    margin: 1rem 0,5rem;
+    padding:0;
+
+    li{
+        text-decoration: none;
+        border:1px solid rgba(50, 15, 248, 0.5);
+        border-radius:0.3rem;
+        padding: .3rem;
+        margin: .3rem .4rem;
+        -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+        box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    }
+}
+}
+
+.postWrapper{
+    padding:.5rem;
+}
+
+.postTop{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.postTopLeft{
+    display:flex;
+    align-items: center;
+    flex-flow:row nowrap;
+    margin-bottom: 1.5rem;
+    
+
+.postProfileImg{
+    max-width: 9vmin;
+    max-height: 9vmin;
+    border-radius:50%;
+    object-fit: cover;
+    margin:0 .9rem;
+}
+
+.userName{
+    font-size:1rem;
+    color:$clr-grey-2;
+    font-weight: 500;
+    margin:0 .8rem;
+}
+
+}
+
+
+    .postDate{
+    font-size: .8rem;
+    font-weight: 600;
+    font-style: italic;
+    margin:.5rem;
+    color:rgb(88, 88, 88);
+    }
+
+
+.place {
+    color:$clr-primary-4;
+    font-weight: 800;
+    font-size: 1rem;
+    margin:.2rem .2rem;
+}
+
+.postTitle{
+    font-weight: 600;
+    color:$clr-primary-3;
+    padding:.5rem 0;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.postCenter{
+    margin: 0.5rem;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color:$clr-grey-3;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.postImg{
+    margin-top: .7rem;
+    width: 100%;
+    max-height: 50vmin;
+    object-fit: cover;
+}
+
+.postButton{
+    display:flex;
+    align-items: center;
+    margin: 0.3rem;
+    padding:0.5rem;
+    border-top: 1px solid rgba(119, 124, 139, 0.5);
+}
+
+.postButtonLeft{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-right: 2rem;
+
+
+.likeIcon{
+    font-size:1.4rem;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+.postLike,
+.postButtonRight{
+    font-size: 1rem;
+    color:rgb(88, 88, 88);
+    font-weight: 600;
+    margin-right:1rem;
+}
+}
+
+.postCommentText{
+    cursor: pointer;
+    font-size: 1rem;
+    color:rgb(43, 40, 40);
+}

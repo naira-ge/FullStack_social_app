@@ -1,0 +1,30 @@
+.addForm{
+    display:flex;
+    margin:0.5rem auto;
+    justify-content: space-between;
+    border:1px solid lightgrey;
+    border-radius:.3rem;
+    cursor: pointer;
+    width: 99%;
+}
+
+.commentInput{
+    outline:none;
+    padding:.3rem;
+    border:none;
+    width:80%;
+}
+
+.addBtn{
+    background-color:rgb(181, 181, 199);
+    border: none;
+    font-weight: 600;
+    padding:0.5rem;
+    color:rgb(75, 72, 72);
+
+    &:hover{
+        background-color:rgb(28, 13, 112);
+        color:white;
+    }
+}
+

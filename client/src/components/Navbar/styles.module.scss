@@ -1,0 +1,152 @@
+@import '../../styles/variables';
+
+.navContainer{
+    margin:0 auto;
+    height:60px;
+    width:100%;
+    background: linear-gradient(rgba(16, 17, 49, 1),rgba(28, 55, 211, 0.897));
+    display:grid;
+    grid-template-columns: 1.5fr 3fr 1.2fr;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index: 999;
+    -webkit-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.68);
+}
+
+a{
+    text-decoration: none;
+}
+
+.navLeft{
+
+    .logo{
+        display:flex;
+        align-items:center;
+        flex-wrap: nowrap;
+        font-size: 1.8rem;
+        margin-left: 1.9rem;
+        color:white;
+        line-height: 1.3rem;
+        font-weight: 800;
+        cursor:pointer;
+        text-decoration: none;
+
+        .logoImg{
+            object-fit: cover;
+            margin-right: .3rem;
+            font-size: 1.9rem;
+        }
+    }
+}
+.navCenter{
+    padding:0 1rem;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    color:white;
+    
+
+    .logoJob{
+        color:white;
+        font-size:1.3rem;
+    }
+}
+
+.navRight{
+    color:white;
+    font-size: 2rem;
+    font-weight: 700;
+
+    .navMenu{
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+    }
+
+    .userInfo {
+        display:flex;
+        align-items:center;
+        flex-direction: column nowrap;
+        
+        .profileInfoName {
+            margin-right: .5rem;
+            font-size:.8rem;
+        }
+    }
+
+    .logOut{
+        font-size:.8rem;
+    }
+
+    .navImgContainer{
+        width: 40px;
+        padding-top:40px;
+        position:relative;
+        border-radius:50%;
+    }
+
+    .navImg{
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        bottom:0;
+        border-radius:50%;
+        background-repeat: no-repeat;
+        background-position:center;
+        border-radius:50%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .navMenu div{
+        margin-right: .4rem;
+        font-size: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        color:white;
+        font-weight:600;
+        border-bottom: none;
+        &:link{
+            text-decoration: none;
+        }
+    }
+
+    .navIcons{
+        display: flex;
+
+        .navIconItem{
+            margin-right: 1rem;
+            cursor: pointer;
+            position: relative;
+            font-size: 1.2rem;
+        }
+
+        .navIconBadge{
+            width: .9rem;
+            height: .9rem;
+            background-color: red;
+            border-radius:50%;
+            color:white;
+            position:absolute;
+            top:-7px;
+            right:-8px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size: 12px;
+        }
+    }
+}
+
+.navItem{
+    a{
+        color:white;
+    }
+    a div:hover{
+        color: rgb(164, 164, 243);
+        transform: scale(1.1);
+    }
+   
+}
