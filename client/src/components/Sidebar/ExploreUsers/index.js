@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from './styles.module.scss';
 import { Link} from "react-router-dom";
-import users  from './userData';
+import users  from '../../../userData';
 
 import {FaJsSquare, FaChevronRight, FaChevronLeft, FaQuoteLeft, FaQuoteRight} from 'react-icons/fa';
 
